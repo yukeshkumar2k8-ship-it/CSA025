@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float length, breadth, perimeter;
+
+    // Input
+    printf("Enter length: ");
+    scanf("%f", &length);
+
+    printf("Enter breadth: ");
+    scanf("%
