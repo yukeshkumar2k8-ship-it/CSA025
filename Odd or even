@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    // Input
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check odd or even
+    if (num % 2 == 0) {
