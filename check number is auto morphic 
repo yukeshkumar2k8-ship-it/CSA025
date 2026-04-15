@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int n,sq,temp,count=0;
+    scanf("%d",&n);
+    sq = n*n;
+    temp = n;
+    while(temp>0){
+        count++;
+        temp/=10;
+    }
+    temp = sq;
+    while(count--){
+        if(n%10 != temp%10){
+            printf("Not Automorphic");
+            return 0;
+        }
+        n/=10;
+        temp/=10;
+    }
+    printf("Automorphic");
+    return 0;
+}
